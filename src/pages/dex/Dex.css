@@ -1,0 +1,62 @@
+.dex {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.dex__bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.2;
+  z-index: -1;
+  filter: brightness(0%);
+  animation: dex__bgAnim 15s linear infinite;
+}
+
+.dex > .MuiIconButton-root {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  color: white;
+  background-color: lightcoral;
+  height: fit-content;
+  width: fit-content;
+  border: 2px solid white;
+  transition: all 0.5s;
+}
+
+.dex > .MuiIconButton-root:hover {
+  filter: brightness(110%);
+  transform: scale(1.05);
+  background-color: lightcoral;
+}
+
+.dex__container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+@keyframes dex__bgAnim {
+  20% {
+    transform: scale(1.03);
+    filter: brightness(80%);
+  }
+  40% {
+    filter: brightness(60%);
+  }
+  60% {
+    filter: brightness(40%);
+  }
+  80% {
+    filter: brightness(20%);
+  }
+}

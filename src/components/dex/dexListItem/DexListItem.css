@@ -1,0 +1,32 @@
+.dexListItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.dexListItem:hover {
+  transform: scale(1.03);
+  filter: brightness(120%);
+}
+
+.dexListItem > p {
+  font-size: 20px;
+  color: white;
+}
+
+.dexListItem__types {
+  display: flex;
+  align-items: center;
+}
+
+.dexListItem__types > img {
+  object-fit: contain;
+  width: 25px;
+  margin-left: 5px;
+}

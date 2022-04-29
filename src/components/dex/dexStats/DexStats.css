@@ -1,0 +1,58 @@
+.dexStats {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 5px;
+  min-width: 300px !important;
+}
+
+.dexStats__displaySprites {
+  position: relative;
+  flex: 1;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.dexStats__displaySprites::-webkit-scrollbar {
+  display: none;
+}
+
+.dexStats__displaySprites > img {
+  cursor: pointer;
+  transform: scale(1.5);
+  transition: all 0.5s;
+}
+
+.dexStats__displaySprites > img:hover {
+  transform: scale(1.6);
+}
+
+.dexStats__displaySprites > .MuiIconButton-root {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  color: white;
+  border: 2px solid white;
+  padding: 3px;
+  transition: all 0.5s;
+}
+
+.dexStats__displaySprites > .MuiIconButton-root:hover {
+  filter: brightness(150%);
+}
+
+.dexStats__pkmnStats {
+  width: 100%;
+  display: flex;
+  overflow-x: hidden;
+  overflow-y: auto;
+  flex-direction: column;
+}
+
+.dexStats__pkmnStats::-webkit-scrollbar {
+  display: none;
+}

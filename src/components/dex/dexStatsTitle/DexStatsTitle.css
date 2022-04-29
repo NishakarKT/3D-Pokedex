@@ -1,0 +1,32 @@
+.dexStatsTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.dexStatsTitle:hover {
+  filter: brightness(120%);
+}
+
+.dexStatsTitle > p {
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+}
+
+.dexStatsTitle__types {
+  display: flex;
+  align-items: center;
+}
+
+.dexStatsTitle__types > img {
+  object-fit: contain;
+  width: 25px;
+  margin-left: 5px;
+}

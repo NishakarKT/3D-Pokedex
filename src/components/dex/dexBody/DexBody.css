@@ -1,0 +1,14 @@
+.dexBody {
+  flex: 1;
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.dexBody::-webkit-scrollbar {
+  height: 5px !important;
+}
+
+.dexBody::-webkit-scrollbar-thumb {
+ background-color: white;
+}

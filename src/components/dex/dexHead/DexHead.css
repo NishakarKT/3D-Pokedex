@@ -1,0 +1,61 @@
+.dexHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: black;
+}
+
+.dexHead__left {
+  display: flex;
+  align-items: center;
+}
+
+.dexHead__left > img {
+  height: 40px;
+  object-fit: contain;
+  margin-right: 10px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.dexHead__left > img:hover {
+  transform: rotate(360deg);
+}
+
+.dexHead__left > h1 {
+  color: white;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.dexHead__right {
+  display: flex;
+  align-items: center;
+}
+
+.dexHead__right > p {
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 20px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.dexHead__right > p:hover {
+  transform: translateY(3px);
+  color: lightcoral;
+}
+
+@media only screen and (max-width: 800px) {
+  .dexHead__left > h1 {
+  font-size: 20px;
+}
+}
+
+@media only screen and (max-width: 800px) {
+  .dexHead__left > h1 {
+    display: none;
+}
+}

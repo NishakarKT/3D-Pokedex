@@ -1,0 +1,57 @@
+.dexList {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  margin-left: 10px;
+}
+
+.dexList > p {
+  font-size: 20px;
+  color: white;
+  text-align: right;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+.dexList__search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.dexList__search > input {
+  flex: 1;
+  font-size: 15px;
+  height: 100%;
+  border: none;
+  outline: none;
+}
+
+.dexList__search > .MuiSvgIcon-root {
+  font-size: 35px;
+  border-radius: 50%;
+  padding: 5px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.dexList__search > .MuiSvgIcon-root:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.dexList__search > .MuiSvgIcon-root:active {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.dexList__items {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.dexList__items::-webkit-scrollbar {
+  display: none;
+}

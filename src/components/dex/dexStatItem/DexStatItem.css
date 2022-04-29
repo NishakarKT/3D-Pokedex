@@ -1,0 +1,21 @@
+.dexStatItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.dexStatItem:hover {
+  transform: scale(1.01);
+  filter: brightness(120%);
+}
+
+.dexStatItem > p {
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+}

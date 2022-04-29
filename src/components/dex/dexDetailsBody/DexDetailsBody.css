@@ -1,0 +1,40 @@
+.dexDetailsBody {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  transition: all 0.5s;
+}
+
+.dexDetailsBody::-webkit-scrollbar {
+  display: none;
+}
+
+.dexDetailsBody > hr {
+  margin: 10px 0;
+  width: 100%;
+  height: 0.5px;
+  background-color: white;
+  border: none;
+  outline: none;
+}
+
+.dexDetailsBody > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.dexDetailsBody b {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  margin-left: auto;
+}
+
+.dexDetailsBody p {
+  font-size: 15px;
+}
